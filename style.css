@@ -68,7 +68,7 @@ body {
   margin: 0px;
 }
 
-/*///////////////////////////////// section 1 ///////////////////////////*/
+/*//////////////////// section 1 ///////////////////*/
 
 .section1{
   margin: 0px;
@@ -130,7 +130,7 @@ div.boxes{
   margin-top: 0px;
 }
 
-/*///////////////////////////////// section 2 ///////////////////////////*/
+/*///////////////// section 2 ///////////////////*/
 
 .section2{
   width: 100%;
@@ -179,7 +179,7 @@ div.boxes{
   right: 80px;
 }
 
-/*///////////////////////////////// section 3 ///////////////////////////*/
+/*/////////////// section 3 /////////////////*/
 
 .section3 #i3{
   max-width: 24%;
@@ -198,7 +198,7 @@ div.boxes{
   text-align: right;
 }
 
-/*///////////////////////////////// section 4 ///////////////////////////*/
+/*///////////////// section 4 /////////////////*/
 
 .section4
 {
@@ -213,14 +213,16 @@ div.boxes{
 .section4 .container
 {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   background: white;
   float: left;
+  right: 20px;
+  top: 0px;
+  bottom: 20px;
   margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
-  border-radius: 8px;
   border: black solid 2px;
 }
 
@@ -234,7 +236,10 @@ div.boxes{
 .section4 .container:hover .content{
   background: white;
   font-size: 10px;
-  border-radius: 8px;
+}
+
+.section4 .container:hover{
+  border: #6D5D61 solid 4px;
 }
 
 /*
@@ -256,7 +261,7 @@ div.boxes{
   }
 */
 
-/*///////////////////////////////// section 5 ///////////////////////////*/
+/*/////////////// section 5 /////////////*/
 
 .section5{
   padding: 0px;
@@ -311,6 +316,7 @@ div.boxes{
   bottom: 0
 }
 
+
 /*///////////////////////////////// general ids///////////////////////////*/
 
 #uppercase{
@@ -340,38 +346,155 @@ div.boxes{
 
 
 
-
-
-
-
-
-
-
-
-
 /*/////////////////////////////////ABOUT.HTML///////////////////////*/
+body{
+  background-color: white;
+}
+/*//////////////////Section 1 ////////////////////*/
+
+.section1a{
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  position: relative;
+  top: 80px;
+}
+
+.section1a .squared{
+  width: 100px;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  background: black;
+
+}
+.section1a .image1{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  height: auto;
+}
+
+#image1size{
+  top: 0px;
+  left: 0px;
+  width: 40%;
+  position: relative;
+}
+
+.section1a{
+  position: relative;
+}
+
+.section1a .titlez{
+  z-index:3;
+  bottom: 10px;
+  left: 250px;
+  position: absolute;
+}
+
+#titlewhite{
+  color: black;
+  font-size: 60px;
+}
+
+.section1a .textbox3{
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 4rem;
+  color: black;
+  position: relative;
+  left: 1120px;
+  bottom: 110px;
+  width: 600px;
+  font-size: 30px;
+  letter-spacing: 8px;
+}
+
+.section2a{
+  position: relative;
+  top: 220px;
+  left: 0px;
+}
+
+.section2a .textbox4{
+ position: relative;
+ height: 180px;
+ width: 950px;
+ margin: 20px;
+ right: 0px;
+ top: 0px;
+
+}
+
+.section2a .textbox4 .box{
+  position: relative;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+
+.section3a .blackbox{
+  position: relative;
+  bottom: 86px;
+  left: 720px;
+  width: 250px;
+  height: 250px;
+  border: black solid 3px;
+}
+
+.section4a .blackbox{
+  background: black;
+  width: 70px;
+  height: auto;
+  top: 965px;
+  left: 7px;
+  text-align: left;
+  position: absolute;
+}
+
+/*/////////////////////////////////Contacts.HTML///////////////////////*/
+
 .container
 {
   position: relative;
-  width: 550px;
+  width: 950px;
   height: 180px;
-  margin: 240px auto;
-  background: red;  
-  right: 220px;
-  top: 220px;
+  margin: 20px;
+  right: 0px;
+  top: 200px;
 }
 
 .container .box
 {
   position: relative;
-  width: calc(150px);
-  height: calc(150px);
+  width: calc(250px);
+  height: calc(250px);
   background: #fff;
   float: left;
   margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 10px;
+  padding: 15px;
+}
+
+.container .box .content
+{
+  position: absolute;
+  top:100%;
+  height: calc(100% - 100px);
+  text-align: center;  
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 
 .container .box .icon
@@ -414,16 +537,7 @@ div.boxes{
   font-size: 25px;
 }
 
-.container .box .content
-{
-  position: absolute;
-  top:100%;
-  height: calc(100% - 100px);
-  text-align: center;  
-  padding: 20px;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
+
 
 .container .box:hover .content
 {
