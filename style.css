@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,103 +15,113 @@ body {
  }
 
  .header{
-   font-size: 35px;
+   font-size: 235%;
    float: left;
-   padding-left: 15px;
-   padding-top: 20px;
-   position: relative;
-   margin: 0px;
+   left: 0px;
+   top: 0px;
+   padding-left: 30px;
+   padding-top: 3%;
+   position: absolute;
  }
 
  .textbox1{
-   position: relative;
-   width: 200px;
+   position: absolute;
+   width: 100%;
    float: right;
    font-size: 35px;
-   padding-left: 120px;
-   padding-right: 100px;
-   padding-top: 60px;
+   padding-top: 0px;
    z-index: 1;
+   top: 30%;
+   left: 70%;
+   
  }
 
-.topnav {
-  overflow: hidden;
+ .topnav {
   position: relative;
+  top:0px;
+  right: 0px;
+  padding-top: 2%;
+
 }
 
 .image1{
-  padding-left: 60px;
-  padding-top: 40px;
-  max-height: 60px;
-  width: auto;
-  position: relative;
+  left: 0px;
+  padding-left: 5%;
+  padding-top: 9%;
+  max-height: 60%;
+  position: absolute;
+  top: 0px;
+  margin: 0;
 }
-
+ 
 .topnav a{
   float: right;
   display: block;
-  color: black;
   text-align: center;
-  padding-top: 14px;
+  padding-top: 0px;
   padding-bottom: 14px;
   padding-right: 40px;
   padding-left: 40px;
   text-decoration: none;
   font-size: 12px;
-}
-
-.section1{
+  color: black;
   margin: 0px;
 }
 
+/*///////////////////////////////// section 1 ///////////////////////////*/
+
+.section1{
+  margin: 0px;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 700px;
+}
+
 .section1 .sqbox{
-  width: 33%;
+  width: 20%;
   height: auto;
-  margin-top: 365px;
-  margin-left: 480px;
-  margin-right: 50px;
   text-align: center;
   border: 3px solid black;
   position: relative;
-  float:right;
-  padding: 40px 40px;
+  float: right;
+  left: 480px;
+  top: 0px;
 }
 
 .section1 .boxes{
-  margin-right: 100px;
+  margin-right: 2px;
   position: absolute;
 }
 
 .section1 .boxes .box{
   float: left;
-  width: calc(33.333% - 180px);
-  padding: 20px;
-  margin-bottom:40px;
-  margin-right: 2px;
-  margin-left: 80px;
-  margin-top: 500px;
+  width: 60%;
+  padding: 10px;
+  left: 80px;
+  top: 4px;
+  position: absolute;
 }
 
 .section1 .boxes .eybox{
   float: left;
-  width: calc(33.333% - 180px);
-  padding: 20px;
-  margin-bottom:40px;
-  margin-right: 2px;
-  margin-left: 20px;
-  margin-top: 500px;
+  width: 60%;
+  padding: 10px;
+  left: 380px;
+  top: 4px;
+  position: absolute;
 }
 
 .section1 .blackbox{
   background: black;
   width: 70px;
   height: auto;
-  margin-top: 650px;
-  margin-left: 100px;
-  padding: 3px 3px;
+  top: 150px;
+  left: 80px;
   text-align: left;
   position: absolute;
 }
+
 
 div.boxes{
   margin-right: 20px;
@@ -118,6 +129,190 @@ div.boxes{
   width: 100%;
   margin-top: 0px;
 }
+
+/*///////////////////////////////// section 2 ///////////////////////////*/
+
+.section2{
+  width: 100%;
+  height: 1000px;
+  left: 0px;
+  top: 900px;
+  position: absolute;
+}
+
+#banner{
+  max-width: 60%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+}
+
+#i2{
+  max-width: 60%;
+  height: auto;
+  left: 20px;
+  top: 0px;
+  position: absolute;
+}
+
+.section2 .textbox2{
+  position: absolute;
+  width: 200px;
+  height: auto;
+  left: 800px;
+  top: 20px;
+}
+
+.section2 .p2{
+  position: absolute;
+  width: 200px;
+  height: auto;
+  left: 800px;
+  top: 45px;
+}
+
+.section2 .blackbox{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: black solid 2px;
+  right: 80px;
+}
+
+/*///////////////////////////////// section 3 ///////////////////////////*/
+
+.section3 #i3{
+  max-width: 24%;
+  height: auto;
+  right: 60px;
+  top: 1130px;
+  position: absolute;
+}
+
+.subtext1{
+  font-size: 10px;
+  position: absolute;
+  right: 40px;
+  top: 1520px;
+  margin-left: 930px;
+  text-align: right;
+}
+
+/*///////////////////////////////// section 4 ///////////////////////////*/
+
+.section4
+{
+  position: relative;
+  width: 800px;
+  height: 300px;
+  margin: 240px 80px;
+  margin-left: 40px;
+  top: 1050px;
+}
+
+.section4 .container
+{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: white;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+  border: black solid 2px;
+}
+
+.section4 .container .content{
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.section4 .container:hover .content{
+  background: white;
+  font-size: 10px;
+  border-radius: 8px;
+}
+
+/*
+.section4 .wline{
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 50px;
+}
+*/
+
+/*
+.section4 .boxy{
+  border: black solid 3px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  }
+*/
+
+/*///////////////////////////////// section 5 ///////////////////////////*/
+
+.section5{
+  padding: 0px;
+  margin: 0px;
+  top: 220%;
+  position: absolute;
+}
+.section5 .i4{
+  position: relative;
+  top:0px;
+  left: 35%;
+  width: 60%;
+  height: auto;
+  bottom: 0%;
+}
+
+.section5 .p4{
+  position: absolute;
+  top: 10%;
+  right: 75%;
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+
+.section5 .p5{
+  position: absolute;
+  top: 50%;
+  right: 75%;
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+.section5 .blackbox{
+  background: black;
+  width: 70px;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  position: absolute;
+}
+
+.section6{
+  position: relative;
+  margin-top: 125%;
+  padding: 0;
+  text-align: center;
+  font-size: 8px;
+  bottom: 0
+}
+
+/*///////////////////////////////// general ids///////////////////////////*/
+
 #uppercase{
   text-transform: uppercase;
 }
@@ -135,6 +330,13 @@ div.boxes{
   color: white;
 }
 
+#italics{
+  font-style: italic;
+}
+
+#black{
+  color: black;
+}
 
 
 
@@ -147,33 +349,23 @@ div.boxes{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*/////////////////////////////////ABOUT.HTML///////////////////////*/
 .container
 {
   position: relative;
-  width: 1200px;
-  height: 300px;
+  width: 550px;
+  height: 180px;
   margin: 240px auto;
+  background: red;  
+  right: 220px;
+  top: 220px;
 }
 
 .container .box
 {
   position: relative;
-  width: calc(400px - 30px);
-  height: calc(300px - 30px);
+  width: calc(150px);
+  height: calc(150px);
   background: #fff;
   float: left;
   margin: 15px;
@@ -212,14 +404,14 @@ div.boxes{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 40px;
   transition: 0.5s;
   color: grey;
 }
 
 .container .box:hover .icon .fa
 {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .container .box .content
